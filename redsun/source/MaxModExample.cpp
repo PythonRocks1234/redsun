@@ -21,8 +21,6 @@ int main(void) {
 	mmInitDefaultMem((mm_addr)soundbank_bin);
 
 	// load sound effects
-	// unable to change variable name due to preset name
-	// being loaded into memory
 	mmLoadEffect( SFX_RED );
 
 	mm_sound_effect red = {
