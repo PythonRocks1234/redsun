@@ -15,6 +15,7 @@ int main(void) {
 	consoleDemoInit();
         int bg3 = bgInit(3, BgType_Bmp8, BgSize_B8_256x256, 0,0);
 
+	// display the image
 	dmaCopy(zuodehaoBitmap, bgGetGfxPtr(bg3), 256*256);
 	dmaCopy(zuodehaoPal, BG_PALETTE, 256*2);
 
