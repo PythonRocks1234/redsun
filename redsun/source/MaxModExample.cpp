@@ -12,10 +12,10 @@ int main(void) {
         videoSetMode(MODE_5_2D);
         vramSetBankA(VRAM_A_MAIN_BG_0x06000000);
 
+	// enable printf
 	consoleDemoInit();
         int bg3 = bgInit(3, BgType_Bmp8, BgSize_B8_256x256, 0,0);
-
-	// display the image
+	// image display
 	dmaCopy(zuodehaoBitmap, bgGetGfxPtr(bg3), 256*256);
 	dmaCopy(zuodehaoPal, BG_PALETTE, 256*2);
 
@@ -76,6 +76,7 @@ int main(void) {
 			sound_eff = mmEffectEx(&red);
 		}
 
+		// exit
 		if( keys_pressed & KEY_START) break;
 
 	} while(1);
