@@ -31,6 +31,11 @@ INCLUDES	:=	include
 GRAPHICS	:=	data
 MUSIC		:=	maxmod_data
 
+GAME_TITLE      := redsun.nds
+GAME_SUBTITLE1  := Red Sun
+GAME_SUBTITLE2  := In the Sky
+GAME_ICON       := $(CURDIR)/../icon.bmp
+
 #---------------------------------------------------------------------------------
 # options for code generation
 #---------------------------------------------------------------------------------
